@@ -1,0 +1,24 @@
+@import './var'; 
+#parallax {
+    width: 100%;
+    min-height: 586px;
+    background-image: url(https://blog.architizer.com/wp-content/uploads/1590962864677Whidbey-Island-Farmhouse_35.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    .subtitle {
+        color: $n1;
+    }
+    h3, .descrip {
+        color: white;
+        text-align: center;
+        padding: 0 2rem;
+    }
+    
+}

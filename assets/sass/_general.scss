@@ -1,0 +1,58 @@
+@import './var';
+
+// texto normal font-family: 'Sarabun', sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Sarabun:wght@100;200;300;400;500;600;700;800&display=swap');
+
+// titulos font-family: 'Forum', cursive;
+@import url('https://fonts.googleapis.com/css2?family=Forum&display=swap');
+
+* { 
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: 'Sarabun', sans-serif;
+    overflow-x: hidden;
+}
+.subtitle {
+    position: relative;
+    font-size: 14px;
+    color: $bg1;
+    letter-spacing: 2.1px;
+    line-height: 32px;
+    font-weight: 500;
+    text-transform: uppercase;
+    &::before{
+        content: '';
+        display: block;
+        width: 1px;
+        height: 40px;
+        background: $gris;
+        position: absolute;
+        left: 48%;
+        top: -140%;
+        z-index: -1;
+    }
+}
+h3 { 
+    font-family: Forum,sans-serif;
+    font-weight: 400;
+    color: #000;
+    font-size: 58px;
+    line-height: 1.2em;
+    letter-spacing: -.04em;
+    -ms-word-wrap: break-word;
+    word-wrap: break-word;
+}
+.descrip {
+    max-width: 75ch;
+    text-align: center;
+}
+.mapa1{
+    width: 100%;
+   
+}
