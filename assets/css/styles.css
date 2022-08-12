@@ -327,3 +327,89 @@ footer {
   font-size: 14px;
   color: #0b6354;
 }
+
+/* INICIA SERVICIOS */
+
+.accordion_container{
+  background-color: #0b6354;
+  width: 100vw;
+  height: 30vw;
+}
+
+.accordion{
+  margin: 100px auto;
+  width: 600px;
+  padding-top: 100px;
+}
+
+.accordion li{
+  list-style: none;
+  width: 100%;
+  margin-bottom: 10px;
+  background: #fff;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+.accordion li label{
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  color: red;
+}
+
+.accordion li label span{
+  transform: rotate(90deg);
+  font-size: 22px;
+  color: #333;
+}
+
+.accordion label + input[type=checkbox]{
+  display: none;
+}
+
+.accordion .content{
+  padding: 0 10px;
+  line-height: 26px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s;
+}
+
+.accordion label + input[type=checkbox]:checked + .content{
+  max-height: 400px;
+}
+
+/* CAROUSEL */
+
+.carousel-item{
+  height: 32rem;
+  background-color: #777;
+  color: #fff;
+  position: relative;
+  background-position: center;
+  background-size: cover;
+}
+
+.container{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  padding-bottom: 50px;
+}
+
+.overlay-image {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  background-position: center;
+  background-size: cover;
+  opacity: 0.5;
+}
