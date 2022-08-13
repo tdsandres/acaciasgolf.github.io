@@ -20,6 +20,7 @@
         h3 {
             font-size: 2.6em;
             position: relative;
+            text-align: left;
             &::after { 
                 content: '';
                 display: block;
@@ -110,5 +111,5 @@
     top: 0;
     background-position: center;
     background-size: cover;
-    opacity: 0.5;
+    opacity: 0.8;
   }

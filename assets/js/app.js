@@ -3,15 +3,7 @@ const $ = (element) => document.querySelector(element);
 
 // aparece whatsapp
 const $btnWsp = $('.whatsapp');
-
-window.onscroll = function() {
-    // console.log(window.scrollY);
-    if (window.scrollY > 550) {
-        $btnWsp.style.display = 'flex'
-    } else {
-        $btnWsp.style.display = 'none'
-    }
-  };
+window.onscroll = () => window.scrollY > 550 && window.scrollY < 2000 ? $btnWsp.style.display = 'flex' : $btnWsp.style.display = 'none';
 
 // comentarios 
 const $commentDescrip = $('.comentario-description')
@@ -78,5 +70,20 @@ $lbMore.forEach((btn) => {
         } else {
             el.target.firstElementChild.innerHTML = '+'
         }
+    })
+})
+
+// menu
+const $btnMenu = document.querySelectorAll('.icon')
+let menuOp = false; 
+
+
+
+$btnMenu.forEach((el) => {
+    el.addEventListener('click', () => {
+    
+        !menuOp ? $('.nav-mb').style.marginTop = 0 : $('.nav-mb').style.marginTop = '-100vh'
+        menuOp = !menuOp
+        
     })
 })
