@@ -1,0 +1,114 @@
+/* INICIA SERVICIOS */
+@import './var';
+
+#servicios {
+    width: 100%;
+    padding: 0 4rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.wrapper-servicios {
+    max-width: 1200px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    padding: 5rem 0;
+    .left {
+        h3 {
+            font-size: 2.6em;
+            position: relative;
+            &::after { 
+                content: '';
+                display: block;
+                width: 25%;
+                height: 15px;
+                background: $bg1;
+                position: absolute;
+                margin-top: -19px;
+                margin-left: -5px;
+                z-index: -1;
+            }
+        }
+    }
+}
+.wrapper-servicios .left, .right{
+    width: 570px;
+}
+ 
+  .accordion{
+    width: 100%;
+    padding-left: 0;
+  }
+  .accordion li{
+    list-style: none;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px 0px;
+    border-bottom: 1px solid rgb(207, 207, 207);
+}
+
+.accordion li label{
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    color: gray;
+    font-weight: 300;
+    border-bottom: 1px gray;
+  }
+  
+  .accordion li label span{
+    font-size: 22px;
+    color: #333;
+  }
+  
+  .accordion label + input[type=checkbox]{
+    display: none;
+  }
+  
+  .accordion .content{
+    padding: 0 10px;
+    line-height: 26px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s;
+  }
+  
+  .accordion label + input[type=checkbox]:checked + .content{
+    max-height: 400px;
+  }
+  
+  /* CAROUSEL */
+  
+  .carousel-item{
+    height: 32rem;
+    background-color: #777;
+    color: #fff;
+    position: relative;
+    background-position: center;
+    background-size: cover;
+  }
+  
+  .container{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    padding-bottom: 50px;
+  }
+  
+  .overlay-image {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    background-position: center;
+    background-size: cover;
+    opacity: 0.5;
+  }
