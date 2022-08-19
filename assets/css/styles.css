@@ -705,3 +705,55 @@ footer .bottom a {
   background-size: cover;
   opacity: 0.8;
 }
+
+/* NOSOTROS */
+
+.nosotros_container{
+  width: 100%;
+  min-height: 30vw;
+  background-image: url(/assets/img/item2.jpg);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nosotros_wrapper{
+  max-width: 1200px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.nosotros_item{
+  width: 550px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.nosotros_container .nosotros_item img{
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
+
+
+.container_info{
+  text-align: left;
+  display: flex;
+  justify-content: left;
+  flex-direction: column;
+  margin-left: 25px;
+}
+
+.container_info h3{
+  padding: 0;
+  margin: 0;
+  font-size: 2.3em;
+  text-align: left;
+  margin-bottom: 15px;
+}
