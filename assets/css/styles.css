@@ -850,7 +850,6 @@ footer .bottom a {
 .nosotros_container {
   width: 100%;
   min-height: 30vw;
-  background-image: url(/assets/img/item2.jpg);
   background-size: cover;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -861,10 +860,29 @@ footer .bottom a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: relative;
+  padding: 5rem 2rem;
+}
+.nosotros_container .box-bg {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  background: rgb(2, 12, 1);
+}
+.nosotros_container .box-bg img {
+  width: 100%;
+  height: 100%;
+  opacity: 0.09;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .nosotros_wrapper {
   max-width: 1200px;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -876,6 +894,7 @@ footer .bottom a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  gap: 50px;
 }
 
 .nosotros_item {
@@ -889,11 +908,22 @@ footer .bottom a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
-.nosotros_container .nosotros_item img {
+.nosotros_container .nosotros_item .container_img {
   width: 200px;
   height: 200px;
+  border-radius: 50%;
+}
+.nosotros_container .nosotros_item .container_img img {
+  width: 200px;
+  height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-radius: 50%;
 }
 
@@ -909,15 +939,23 @@ footer .bottom a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-left: 25px;
+  margin-left: 35px;
+  color: gray;
+}
+.container_info p {
+  max-width: 40ch;
 }
 
 .container_info h3 {
   padding: 0;
   margin: 0;
-  font-size: 2.3em;
+  font-size: 1.2em;
   text-align: left;
   margin-bottom: 15px;
+  color: white;
+  font-family: "Sarabun", sans-serif;
+  letter-spacing: 2.2px;
+  text-transform: uppercase;
 }
 
 .container-productos {

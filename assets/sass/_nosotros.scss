@@ -3,19 +3,37 @@
 .nosotros_container{
     width: 100%;
     min-height: 30vw;
-    background-image: url(/assets/img/item2.jpg);
     background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
+    padding: 5rem 2rem;
+    .box-bg { 
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      z-index: -1;
+      top: 0;
+      left: 0;
+      background: rgb(2, 12, 1);
+      img { 
+        width: 100%;
+        height: 100%;
+        opacity: 0.09;
+        object-fit: cover;
+      }
+    }
   }
   
   .nosotros_wrapper{
     max-width: 1200px;
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    gap: 50px;
   }
   
   .nosotros_item{
@@ -23,31 +41,44 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: row;
   }
   
   
-  .nosotros_container .nosotros_item img{
+  .nosotros_container .nosotros_item .container_img{
     width: 200px;
     height: 200px;
     border-radius: 50%;
+    img {
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 50%;
+    }
   }
-  
-  
   
   .container_info{
     text-align: left;
     display: flex;
     justify-content: left;
     flex-direction: column;
-    margin-left: 25px;
+    margin-left: 35px;
+    color: gray;
+    p {
+      max-width: 40ch;
+    }
   }
   
   .container_info h3{
     padding: 0;
     margin: 0;
-    font-size: 2.3em;
+    font-size: 1.2em;
     text-align: left;
     margin-bottom: 15px;
+    color: white;
+    font-family: 'Sarabun', sans-serif;
+    letter-spacing: 2.2px;
+    text-transform: uppercase;
   }
   
   .container-productos {
