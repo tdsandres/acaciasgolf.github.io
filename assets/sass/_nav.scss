@@ -53,6 +53,9 @@
     }
     .icon {
         display: none;
+        color: white;
+        padding: 20px 0px;
+        cursor: pointer;
     }
 }
 .nav-mb {
@@ -91,13 +94,9 @@
             align-items: center;
             position: absolute;
             bottom: 0;
-            i {
-                padding: 30px 30px 0px 30px;
-                font-size: 3em;
-                color: white;
-                z-index: 1000000;
-                cursor: pointer;
-            }
+            color: white;
+            cursor: pointer;
+            padding: 20px;
         }
     }
 }
