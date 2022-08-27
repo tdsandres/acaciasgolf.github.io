@@ -93,7 +93,7 @@ h3 {
 
 .carousel-main-wrapper {
   width: 100%;
-  height: 90vh;
+  height: 85vh;
   margin: auto;
   overflow: hidden;
   position: relative;
@@ -150,9 +150,8 @@ h3 {
 
 .nav {
   width: 100%;
-  height: 10vh;
-  background: #0b6354;
-  position: sticky;
+  height: 15vh;
+  background: black;
   top: 0;
   left: 0;
   right: 0;
@@ -160,9 +159,9 @@ h3 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -172,6 +171,11 @@ h3 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  max-width: 900px;
+  width: 100%;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   gap: 5px;
 }
 .nav ul li {
@@ -182,7 +186,8 @@ h3 {
   line-height: 32px;
   font-weight: 300;
   text-decoration: none;
-  color: white;
+  color: gray;
+  opacity: 0.7;
   text-transform: uppercase;
   padding: 10px;
   -webkit-transition: 0.5s;
@@ -945,7 +950,7 @@ footer .bottom a {
   z-index: -1;
   top: 0;
   left: 0;
-  background: rgb(2, 12, 1);
+  background: rgb(25, 25, 25);
 }
 .nosotros_container .box-bg img {
   width: 100%;
@@ -953,6 +958,8 @@ footer .bottom a {
   opacity: 0.09;
   -o-object-fit: cover;
      object-fit: cover;
+  -webkit-filter: blur(2px);
+          filter: blur(2px);
 }
 
 .nosotros_wrapper {
@@ -969,17 +976,17 @@ footer .bottom a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 50px;
+  gap: 30px;
 }
 
 .nosotros_item {
-  width: 550px;
+  width: 350px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -990,16 +997,15 @@ footer .bottom a {
 }
 
 .nosotros_container .nosotros_item .container_img {
-  width: 200px;
-  height: 200px;
+  width: 150px;
+  height: 150px;
   border-radius: 50%;
 }
 .nosotros_container .nosotros_item .container_img img {
-  width: 200px;
-  height: 200px;
+  width: 100%;
+  height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  border-radius: 50%;
 }
 
 .container_info {
@@ -1024,10 +1030,9 @@ footer .bottom a {
 .container_info h3 {
   padding: 0;
   margin: 0;
-  font-size: 1.2em;
+  font-size: 0.9em;
   text-align: left;
   margin-bottom: 15px;
-  color: white;
   font-family: "Sarabun", sans-serif;
   letter-spacing: 2.2px;
   text-transform: uppercase;
