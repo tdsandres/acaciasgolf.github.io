@@ -144,3 +144,42 @@ cabanias.forEach((el) => {
 
     $containerCab.appendChild(div)
 })
+
+// slider main
+
+const $slider = $('#slider')
+let sliderBox = document.querySelectorAll('.box-img')
+let sliderBoxLast = sliderBox[sliderBox.length - 1]
+
+const $btnL = $('#btn-left')
+const $btnR = $('#btn-right')
+
+$slider.insertAdjacentElement('afterbegin', sliderBoxLast)
+
+function nextImg(){
+    let firstSlider = document.querySelectorAll('.box-img')[0]
+    $slider.style.marginLeft = "-200%"
+    $slider.style.transition = "all 0.5s"
+    setTimeout(() => {
+        $slider.style.transition = "none";
+        $slider.insertAdjacentElement('beforeend', firstSlider)
+        $slider.style.marginLeft = "-100%"
+    }, 500)
+}
+
+function prevImg(){
+    let sliderBox = document.querySelectorAll('.box-img')
+    let sliderBoxLast = sliderBox[sliderBox.length - 1]
+    $slider.style.marginLeft = "0"
+    $slider.style.transition = "all 0.5s"
+    setTimeout(() => {
+        $slider.style.transition = "none";
+        $slider.insertAdjacentElement('afterbegin', sliderBoxLast)
+        $slider.style.marginLeft = "-100%"
+    }, 500)
+}
+
+$btnR.addEventListener('click', nextImg)
+$btnL.addEventListener('click', prevImg)
+
+setInterval(nextImg, 4000)

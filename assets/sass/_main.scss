@@ -49,6 +49,7 @@
                 img { 
                     transition: 1s;
                     transform: scale(1.3);
+                    filter: blur(4px);
                 }
                 .box-text {
                     transition: 1s;
@@ -57,4 +58,25 @@
             }
         }
     }
+}
+
+@media (max-width: 768px){
+    #main{
+        .box-wrapper-items{
+            .box {
+                img {
+                    filter: blur(2px);
+                    animation: zoomInfinite infinite 500s;
+                }
+                .box-text {
+                    top: 0;
+                }
+            }
+        }
+    }
+}
+
+@keyframes zoomInfinite {
+    0% { transform: scale(1); }
+    100% { transform: scale(10); }
 }
