@@ -92,44 +92,44 @@ const $containerCab = $('#contenedor-cabanias')
 
 let cabanias = [
         {
-            titulo: "Alberto Suite",
+            titulo: "Bungalow",
             img: "https://i.pinimg.com/originals/0b/af/50/0baf509de204cf32bb612b34f7bae734.jpg",
             capacity: 5,
             size: 193,
             description: "Lorem ipsum dolor sit amet, in nam denique suavitate repudiandae, homero dictas omnesque duo et. Novum dignissim consectetuer ei mel. Ne patrioque consequat persequeris usu, duo inani imperdiet deseruisse in, no tation"
         }, 
         {
-            titulo: "Condena a CFK",
+            titulo: "Dormis",
             img: "https://www.yankodesign.com/images/design_news/2022/03/auto-draft/09_casazgz_ihouse_prefabhome.jpg",
-            capacity: 3,
+            capacity: 6,
             size: 6,
             description: "Lorem ipsum dolor sit amet, in nam denique suavitate repudiandae, homero dictas omnesque duo et. Novum dignissim consectetuer ei mel. Ne patrioque consequat persequeris usu, duo inani imperdiet deseruisse in, no tation"
         },
         {
-            titulo: "Nisman tour",
+            titulo: "Cabaña2",
             img: "https://www.thespruce.com/thmb/EdY8jfEJJZMQxcEUpTupMWI1-Rg=/420x0/filters:no_upscale():max_bytes(150000):strip_icc()/andrea-davis-IWfe63thJxk-unsplash-ed2a4a77a0bb40bc8b4247355480977e.jpg",
-            capacity: 3,
+            capacity: 4,
             size: 6,
             description: "Lorem ipsum dolor sit amet, in nam denique suavitate repudiandae, homero dictas omnesque duo et. Novum dignissim consectetuer ei mel. Ne patrioque consequat persequeris usu, duo inani imperdiet deseruisse in, no tation"
         },
         {
-            titulo: "Spyderman",
+            titulo: "Cabaña3",
             img: "https://thedesigngesture.com/wp-content/uploads/2021/10/modern-island-cabin-design-1000x667-1-1024x602.jpg",
             capacity: 3,
             size: 6,
             description: "Lorem ipsum dolor sit amet, in nam denique suavitate repudiandae, homero dictas omnesque duo et. Novum dignissim consectetuer ei mel. Ne patrioque consequat persequeris usu, duo inani imperdiet deseruisse in, no tation"
         },
         {
-            titulo: "Spyderman",
+            titulo: "Cabaña4",
             img: "https://thedesigngesture.com/wp-content/uploads/2021/10/modern-island-cabin-design-1000x667-1-1024x602.jpg",
-            capacity: 3,
+            capacity: 5,
             size: 6,
             description: "Lorem ipsum dolor sit amet, in nam denique suavitate repudiandae, homero dictas omnesque duo et. Novum dignissim consectetuer ei mel. Ne patrioque consequat persequeris usu, duo inani imperdiet deseruisse in, no tation"
         },
         {
-            titulo: "Spyderman",
+            titulo: "Cabaña5",
             img: "https://thedesigngesture.com/wp-content/uploads/2021/10/modern-island-cabin-design-1000x667-1-1024x602.jpg",
-            capacity: 3,
+            capacity: 4,
             size: 6,
             description: "Lorem ipsum dolor sit amet, in nam denique suavitate repudiandae, homero dictas omnesque duo et. Novum dignissim consectetuer ei mel. Ne patrioque consequat persequeris usu, duo inani imperdiet deseruisse in, no tation"
         },
