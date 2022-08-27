@@ -1,0 +1,77 @@
+/* NOSOTROS */
+
+.nosotros_container{
+    width: 100%;
+    min-height: 30vw;
+    background-image: url(/assets/img/item2.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .nosotros_wrapper{
+    max-width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .nosotros_item{
+    width: 550px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  
+  .nosotros_container .nosotros_item img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+  }
+  
+  
+  
+  .container_info{
+    text-align: left;
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+    margin-left: 25px;
+  }
+  
+  .container_info h3{
+    padding: 0;
+    margin: 0;
+    font-size: 2.3em;
+    text-align: left;
+    margin-bottom: 15px;
+  }
+  
+  .container-productos {
+    display: grid;
+   grid-template-columns: repeat(auto-fill, 320px);
+    grid-template-rows: auto;
+    padding-inline: 2rem;
+    justify-content: space-evenly;
+    margin: auto;
+    grid-gap: 2rem;
+    padding-top: 25px;
+  }
+    
+  
+  .container-productos .img-container{
+    flex: 0 1 320px;
+    border: 2px solid black;
+  }
+  
+  .container-productos .img-container:hover{
+    transform: scale(1.05);
+    transition: .7s;
+  }
+  
+  .container-productos .img-container .img-productos{
+    width: 100%;
+  }

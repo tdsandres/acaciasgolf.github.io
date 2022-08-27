@@ -55,7 +55,6 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
     }, 3500)
-
 });
 
 // servicios btns {}
@@ -86,4 +85,62 @@ $btnMenu.forEach((el) => {
         menuOp = !menuOp
         
     })
+})
+
+// crear cabañas
+const $containerCab = $('#contenedor-cabanias')
+
+let cabanias = [
+        {
+            titulo: "Alberto Suite",
+            img: "https://i.pinimg.com/originals/0b/af/50/0baf509de204cf32bb612b34f7bae734.jpg",
+            capacity: 3,
+            size: 6,
+            description: "Lorem ipsum dolor sit amet, in nam denique suavitate repudiandae, homero dictas omnesque duo et. Novum dignissim consectetuer ei mel. Ne patrioque consequat persequeris usu, duo inani imperdiet deseruisse in, no tation"
+        }, 
+        {
+            titulo: "Condena a CFK",
+            img: "https://www.yankodesign.com/images/design_news/2022/03/auto-draft/09_casazgz_ihouse_prefabhome.jpg",
+            capacity: 3,
+            size: 6,
+            description: "Lorem ipsum dolor sit amet, in nam denique suavitate repudiandae, homero dictas omnesque duo et. Novum dignissim consectetuer ei mel. Ne patrioque consequat persequeris usu, duo inani imperdiet deseruisse in, no tation"
+        },
+        {
+            titulo: "Nisman tour",
+            img: "https://www.thespruce.com/thmb/EdY8jfEJJZMQxcEUpTupMWI1-Rg=/420x0/filters:no_upscale():max_bytes(150000):strip_icc()/andrea-davis-IWfe63thJxk-unsplash-ed2a4a77a0bb40bc8b4247355480977e.jpg",
+            capacity: 3,
+            size: 6,
+            description: "Lorem ipsum dolor sit amet, in nam denique suavitate repudiandae, homero dictas omnesque duo et. Novum dignissim consectetuer ei mel. Ne patrioque consequat persequeris usu, duo inani imperdiet deseruisse in, no tation"
+        },
+        {
+            titulo: "Spyderman",
+            img: "https://thedesigngesture.com/wp-content/uploads/2021/10/modern-island-cabin-design-1000x667-1-1024x602.jpg",
+            capacity: 3,
+            size: 6,
+            description: "Lorem ipsum dolor sit amet, in nam denique suavitate repudiandae, homero dictas omnesque duo et. Novum dignissim consectetuer ei mel. Ne patrioque consequat persequeris usu, duo inani imperdiet deseruisse in, no tation"
+        },
+        
+    ]
+
+cabanias.forEach((el) => {
+    // console.log(el.titulo)
+
+    let div = document.createElement("div")
+
+    div.className = "box"; 
+    div.innerHTML = `
+    <div class="img" id="hiperv-cab">
+        <img src="${el.img}">
+    </div>
+    <div class="info">
+        <h1 id="hiperv-cab">${el.titulo}</h1>
+        <p>Capacidad: <span>${el.capacity} PERSONAS</span> — Tamaño: <span>${el.size}M2</span></p>
+        <p class="desc">${el.description}</p>
+        <div class="contact">
+            <button>Contactar</button>
+        </div>
+    </div>
+    `
+
+    $containerCab.appendChild(div)
 })
