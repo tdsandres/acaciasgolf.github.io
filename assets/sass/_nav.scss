@@ -68,12 +68,18 @@
     justify-content: center;
     align-items: center;
     z-index: 150;
+    img {
+        display: none;
+    }
     ul {
         display: flex;
         max-width: 900px;
         width: 100%;
         justify-content: space-evenly;
         gap: 5px;
+        img { 
+            display: block;
+        }
         li {
             list-style: none;
             a {
@@ -105,7 +111,7 @@
 .nav-mb {
     width: 100%;
     height: 100vh;
-    background: $bg1;
+    background: black;
     position: fixed;
     top: 0;
     left: 0;
@@ -146,11 +152,84 @@
 }
 #btn-menu {
     cursor: pointer;
+    
 }
+
+.reviews {
+    width: 100%;
+    height: 8vh;
+    background: white;
+    top: 0;
+    left: 0;
+    right: 0;
+    position: fixed;
+    z-index: 100000;
+    padding: 0 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #1c1c1c;
+    font-family: 'Forum', cursive;
+    h2 {
+        font-size: 1.3em;
+        font-weight: 100;
+    }
+    a {
+        font-family: 'Sarabun', sans-serif;
+        color: #1c1c1c;
+        font-size: 0.9em;
+    }
+    .box-votes {
+        width: 300px;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+        font-family: 'Sarabun', sans-serif;
+        font-size: 0.9em;
+        span { 
+            height: 15px;
+            width: 15px;
+            border-radius: 100%;
+            background:#1c1c1c;
+        }
+    }
+    .ubi { 
+        width: 300px;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+    .reserva {
+        a {
+            padding: 8px 20px;
+            background: #1c1c1c;
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            text-transform: uppercase;
+            margin-left: 70px;
+        }
+    }
+
+}
+@media (max-width: 1345px){
+    .reviews {
+        display: none;
+    } 
+}
+
 @media (max-width: 768px){
     .nav {
+        justify-content: space-between;
         ul {
             display: none;
+        }
+        img { 
+            display: flex;
         }
         .icon {
             display: flex;

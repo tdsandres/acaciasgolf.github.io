@@ -167,6 +167,9 @@ h3 {
           align-items: center;
   z-index: 150;
 }
+.nav img {
+  display: none;
+}
 .nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -177,6 +180,9 @@ h3 {
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
   gap: 5px;
+}
+.nav ul img {
+  display: block;
 }
 .nav ul li {
   list-style: none;
@@ -210,7 +216,7 @@ h3 {
 .nav-mb {
   width: 100%;
   height: 100vh;
-  background: #0b6354;
+  background: black;
   position: fixed;
   top: 0;
   left: 0;
@@ -263,9 +269,100 @@ h3 {
   cursor: pointer;
 }
 
+.reviews {
+  width: 100%;
+  height: 8vh;
+  background: white;
+  top: 0;
+  left: 0;
+  right: 0;
+  position: fixed;
+  z-index: 100000;
+  padding: 0 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: #1c1c1c;
+  font-family: "Forum", cursive;
+}
+.reviews h2 {
+  font-size: 1.3em;
+  font-weight: 100;
+}
+.reviews a {
+  font-family: "Sarabun", sans-serif;
+  color: #1c1c1c;
+  font-size: 0.9em;
+}
+.reviews .box-votes {
+  width: 300px;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 8px;
+  font-family: "Sarabun", sans-serif;
+  font-size: 0.9em;
+}
+.reviews .box-votes span {
+  height: 15px;
+  width: 15px;
+  border-radius: 100%;
+  background: #1c1c1c;
+}
+.reviews .ubi {
+  width: 300px;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.reviews .reserva a {
+  padding: 8px 20px;
+  background: #1c1c1c;
+  color: white;
+  text-decoration: none;
+  border-radius: 50px;
+  text-transform: uppercase;
+  margin-left: 70px;
+}
+
+@media (max-width: 1345px) {
+  .reviews {
+    display: none;
+  }
+}
 @media (max-width: 768px) {
+  .nav {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
   .nav ul {
     display: none;
+  }
+  .nav img {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
   .nav .icon {
     display: -webkit-box;
@@ -785,6 +882,11 @@ footer .bottom a {
   opacity: 0.8;
 }
 
+@media (max-width: 768px) {
+  #servicios {
+    padding: 0 2rem;
+  }
+}
 /* CABAÑAS ACACIAS */
 #cabanias {
   width: 100%;

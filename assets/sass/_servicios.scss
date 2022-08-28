@@ -113,3 +113,9 @@
     background-size: cover;
     opacity: 0.8;
   }
+
+@media (max-width: 768px){ 
+  #servicios {
+    padding: 0 2rem;
+  }
+}
