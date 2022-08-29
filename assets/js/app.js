@@ -119,46 +119,46 @@ const $containerCab = $('#contenedor-cabanias')
 
 let cabanias = [
         {
-            titulo: "Bungalow",
+            titulo: "Cabaña 1",
             img: "https://i.pinimg.com/originals/0b/af/50/0baf509de204cf32bb612b34f7bae734.jpg",
-            capacity: 5,
+            capacity: 6,
             size: 193,
-            description: "Lorem ipsum dolor sit amet, in nam denique suavitate repudiandae, homero dictas omnesque duo et. Novum dignissim consectetuer ei mel. Ne patrioque consequat persequeris usu, duo inani imperdiet deseruisse in, no tation"
+            description: "2 habitaciones con cama matrimonial y 2 baños"
         }, 
         {
-            titulo: "Dormis",
+            titulo: "Cabaña 3",
             img: "https://www.yankodesign.com/images/design_news/2022/03/auto-draft/09_casazgz_ihouse_prefabhome.jpg",
-            capacity: 6,
+            capacity: 4,
             size: 6,
-            description: "Lorem ipsum dolor sit amet, in nam denique suavitate repudiandae, homero dictas omnesque duo et. Novum dignissim consectetuer ei mel. Ne patrioque consequat persequeris usu, duo inani imperdiet deseruisse in, no tation"
+            description: "2 Plantas 2 Baños"
         },
         {
-            titulo: "Cabaña2",
+            titulo: "Cabaña 4",
             img: "https://www.thespruce.com/thmb/EdY8jfEJJZMQxcEUpTupMWI1-Rg=/420x0/filters:no_upscale():max_bytes(150000):strip_icc()/andrea-davis-IWfe63thJxk-unsplash-ed2a4a77a0bb40bc8b4247355480977e.jpg",
-            capacity: 4,
+            capacity: 2,
+            size: 2,
+            description: "2 ambientes en planta baja"
+        },
+        {
+            titulo: "Cabaña 5",
+            img: "https://thedesigngesture.com/wp-content/uploads/2021/10/modern-island-cabin-design-1000x667-1-1024x602.jpg",
+            capacity: 2,
             size: 6,
             description: "Lorem ipsum dolor sit amet, in nam denique suavitate repudiandae, homero dictas omnesque duo et. Novum dignissim consectetuer ei mel. Ne patrioque consequat persequeris usu, duo inani imperdiet deseruisse in, no tation"
         },
         {
-            titulo: "Cabaña3",
+            titulo: "Cabaña 7",
             img: "https://thedesigngesture.com/wp-content/uploads/2021/10/modern-island-cabin-design-1000x667-1-1024x602.jpg",
-            capacity: 3,
+            capacity: 2,
             size: 6,
-            description: "Lorem ipsum dolor sit amet, in nam denique suavitate repudiandae, homero dictas omnesque duo et. Novum dignissim consectetuer ei mel. Ne patrioque consequat persequeris usu, duo inani imperdiet deseruisse in, no tation"
+            description: "2 ambientes en planta baja"
         },
         {
-            titulo: "Cabaña4",
+            titulo: "Cabaña 8",
             img: "https://thedesigngesture.com/wp-content/uploads/2021/10/modern-island-cabin-design-1000x667-1-1024x602.jpg",
-            capacity: 5,
+            capacity: 2,
             size: 6,
-            description: "Lorem ipsum dolor sit amet, in nam denique suavitate repudiandae, homero dictas omnesque duo et. Novum dignissim consectetuer ei mel. Ne patrioque consequat persequeris usu, duo inani imperdiet deseruisse in, no tation"
-        },
-        {
-            titulo: "Cabaña5",
-            img: "https://thedesigngesture.com/wp-content/uploads/2021/10/modern-island-cabin-design-1000x667-1-1024x602.jpg",
-            capacity: 4,
-            size: 6,
-            description: "Lorem ipsum dolor sit amet, in nam denique suavitate repudiandae, homero dictas omnesque duo et. Novum dignissim consectetuer ei mel. Ne patrioque consequat persequeris usu, duo inani imperdiet deseruisse in, no tation"
+            description: "2 ambientes en planta baja"
         },
         
     ]
