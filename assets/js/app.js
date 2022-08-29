@@ -1,9 +1,36 @@
 // seleccionar elementos
 const $ = (element) => document.querySelector(element); 
 
-// aparece whatsapp
+// scroll
 const $btnWsp = $('.whatsapp');
-window.onscroll = () => window.scrollY > 550 && window.scrollY < 2000 ? $btnWsp.style.display = 'flex' : $btnWsp.style.display = 'none';
+const $imgMain = document.querySelectorAll('#main-img')
+window.onscroll = () => {
+    //wsp
+    console.log(window.scrollY)
+    window.scrollY > 550 && window.scrollY < 3000 ? $btnWsp.style.display = 'flex' : $btnWsp.style.display = 'none';   
+
+    $imgMain.forEach((el) => {
+        if (window.scrollY > 100){
+            el.style.transform = 'scale(1.1)'
+            $slider.style.width = '410%'
+        } 
+        if (window.scrollY > 200) {
+            el.style.transform = 'scale(1.2)'
+            $slider.style.width = '430%'
+        } 
+        if (window.scrollY > 300) {
+            el.style.transform = 'scale(1.3)'
+            $slider.style.width = '460%'
+        }
+        
+        if (window.scrollY > 400) {
+            el.style.transform = 'scale(1.4)'
+            $slider.style.width = '490%'
+        }
+
+    })
+
+}
 
 // comentarios 
 const $commentDescrip = $('.comentario-description')
@@ -196,4 +223,4 @@ function prevImg(){
 $btnR.addEventListener('click', nextImg)
 $btnL.addEventListener('click', prevImg)
 
-setInterval(nextImg, 4000)
+setInterval(nextImg, 8000)

@@ -115,6 +115,8 @@ h3 {
   height: 100%;
   width: 400%;
   margin-left: -100%;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 .carousel-main-wrapper .slider .box-img img {
   display: block;
@@ -122,6 +124,8 @@ h3 {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
 }
 .carousel-main-wrapper .slider_btn .btn {
   position: absolute;
