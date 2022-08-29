@@ -1106,12 +1106,20 @@ footer .bottom a {
   height: 150px;
   border-radius: 50%;
 }
+
+
 .nosotros_container .nosotros_item .container_img img {
   width: 100%;
   height: 100%;
+  transition: transform .2s;
   -o-object-fit: cover;
      object-fit: cover;
 }
+
+.nosotros_container .nosotros_item .container_img img:hover {
+  transform: scale(1.3);
+}
+
 
 .container_info {
   text-align: left;
@@ -1175,3 +1183,4 @@ footer .bottom a {
 .container-productos .img-container .img-productos {
   width: 100%;
 }
+
