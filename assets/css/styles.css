@@ -1246,7 +1246,16 @@ footer .bottom a {
           transform: scale(1.2);
 }
 
-.titulo_turismo {
+.wrapper-title {
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.wrapper-title .titulo_turismo {
   text-align: center;
   margin: 40px 0;
   font-family: Forum, sans-serif;
@@ -1254,6 +1263,17 @@ footer .bottom a {
   font-size: 2.2em;
   font-weight: 100;
   margin: 2.5em 0em;
+  position: relative;
+}
+.wrapper-title .titulo_turismo::after {
+  content: "";
+  display: block;
+  width: 37%;
+  height: 25px;
+  background: #0b6354;
+  position: absolute;
+  margin-top: -13px;
+  z-index: -1;
 }
 
 #contacto {
