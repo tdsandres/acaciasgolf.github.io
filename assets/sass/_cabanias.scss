@@ -88,9 +88,6 @@
                 cursor: pointer;
             }
 
-            &:hover > .img img {
-                transform: scale(1.05);
-            }
             &:hover > .info h1 {
                 color: $bg1;
             }
