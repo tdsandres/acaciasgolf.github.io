@@ -1178,6 +1178,10 @@ footer .bottom a {
 
 .titulo_turismo {
   text-align: center;
+  margin: 40px 0;
+  font-family: Forum, sans-serif;
+  letter-spacing: 1.5px;
+  font-size: 2em;
 }
 
 .turismo_galeria {
@@ -1219,7 +1223,7 @@ footer .bottom a {
   height: 150px;
 }
 
-.turismo_item img {
+.turismo_item a img {
   height: 150px;
   width: 100%;
   -o-object-fit: cover;
@@ -1231,10 +1235,18 @@ footer .bottom a {
 } */
 .turismo_item h3 {
   padding: 0;
-  margin: 0;
+  margin: 10px 10px;
   font-size: 1em;
   /* margin-bottom: 15px; */
   font-family: "Sarabun", sans-serif;
   letter-spacing: 2.2px;
   text-transform: uppercase;
+}
+
+.turismo_item a{
+  transition: .2s;
+}
+
+.turismo_item a:hover{
+  transform: scale(1.1);
 }
