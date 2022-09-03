@@ -1255,3 +1255,191 @@ footer .bottom a {
   font-weight: 100;
   margin: 2.5em 0em;
 }
+
+#contacto {
+  width: 100%;
+  height: 85vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+#contacto .left {
+  width: 70%;
+  height: 100%;
+  background: red;
+  position: relative;
+}
+#contacto .left .bg {
+  width: 100%;
+  height: 100%;
+  background: rgb(7, 7, 7);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+#contacto .left .bg img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  opacity: 0.3;
+}
+#contacto .left .container {
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 4rem 5rem;
+}
+#contacto .left .container h3 {
+  color: white;
+  text-align: left;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+#contacto .left .container h3::after {
+  content: "";
+  display: block;
+  width: 25%;
+  height: 15px;
+  background: #0b6354;
+  position: absolute;
+  margin-top: 35px;
+  margin-left: -5px;
+  z-index: -1;
+}
+#contacto .left .container p {
+  margin-top: 15px;
+  max-width: 75ch;
+  color: gray;
+}
+#contacto .left .container .container-buttons {
+  width: 100%;
+  height: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 30px;
+}
+#contacto .left .container .container-buttons a {
+  width: 70px;
+  height: 70px;
+  background: #0b6354;
+  border-radius: 100%;
+  margin-bottom: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+#contacto .left .container .container-buttons a div i {
+  font-size: 1.4em;
+  color: white;
+}
+#contacto .left .container .container-buttons a:hover {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+#contacto .right {
+  width: 30%;
+  height: 100%;
+  background: #0b6354;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 4rem 2.5rem;
+  gap: 30px;
+}
+#contacto .right h3 {
+  font-size: 2.5em;
+  color: white;
+  text-align: left;
+}
+#contacto .right .box-info {
+  width: 100%;
+  height: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+#contacto .right .box-info .icon {
+  width: 60px;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+#contacto .right .box-info .icon i {
+  color: white;
+  font-size: 2em;
+}
+#contacto .right .box-info .info {
+  width: 70%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: rgb(220, 220, 220);
+  padding-left: 15px;
+}
+
+@media (max-width: 1024px) {
+  #contacto {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    height: 160vh;
+  }
+  #contacto .left {
+    width: 100%;
+    height: 50%;
+  }
+  #contacto .right {
+    width: 100%;
+    height: 50%;
+  }
+}

@@ -162,7 +162,7 @@ cabanias.forEach((el) => {
     </div>
     `
 
-    $containerCab.appendChild(div)
+    $containerCab.appendChild(div);
 })
 
 // slider main

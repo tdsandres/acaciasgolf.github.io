@@ -1,0 +1,147 @@
+@import './var';
+
+#contacto {
+    width: 100%;
+    height: 85vh;
+    display: flex;
+    .left { 
+        width: 70%;
+        height: 100%;
+        background: red;
+        position: relative;
+        .bg {
+            width: 100%;
+            height: 100%;
+            background: rgb(7, 7, 7);
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 1;
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                opacity: 0.3;
+            }
+        }
+        .container { 
+            width: 100%;
+            height: 100%;
+            z-index: 2;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 4rem 5rem;
+            h3 {
+                color: white;
+                text-align: left;
+                display: flex;
+                align-items: center;
+                &::after { 
+                    content: '';
+                    display: block;
+                    width: 25%;
+                    height: 15px;
+                    background: $bg1;
+                    position: absolute;
+                    margin-top: 35px;
+                    margin-left: -5px;
+                    z-index: -1;
+                }
+            }
+            p {
+                margin-top: 15px;
+                max-width: 75ch;
+                color: gray;
+            }
+            .container-buttons {
+                width: 100%;
+                height: 150px;
+                display: flex;
+                align-items: center;
+                gap: 30px;
+                a{
+                    width: 70px;
+                    height: 70px;
+                    background: $bg1;
+                    border-radius: 100%;
+                    margin-bottom: 10px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    transition: 0.4s;
+                    div {
+                        i {
+                            font-size: 1.4em;
+                            color: white;
+                        }
+                    }
+                    &:hover {
+                        transform: scale(0.9);
+                        transition: 0.4s;
+                    }
+                }
+            }
+        }
+
+    }
+    .right { 
+        width: 30%;
+        height: 100%;
+        background: $bg1;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding: 4rem 2.5rem;
+        gap: 30px;
+        h3 {
+            font-size: 2.5em;
+            color: white;
+            text-align: left;
+        }
+        .box-info {
+            width: 100%;
+            height: 60px;
+            display: flex;
+            flex-wrap: wrap;
+
+            .icon {
+                width: 60px;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                i {
+                    color: white;
+                    font-size: 2em;
+                }
+            }
+            .info {
+                width: 70%;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                color: rgb(220, 220, 220);
+                padding-left: 15px;
+            }
+        }
+    }
+}
+
+@media (max-width: 1024px){
+    #contacto {
+        flex-wrap: wrap;
+        height: 160vh;
+        .left {
+            width: 100%;
+            height: 50%;
+
+            
+        }
+        .right{ 
+            width: 100%;
+            height: 50%;
+        }
+    }
+}
