@@ -1176,14 +1176,6 @@ footer .bottom a {
   width: 100%;
 }
 
-.titulo_turismo {
-  text-align: center;
-  margin: 40px 0;
-  font-family: Forum, sans-serif;
-  letter-spacing: 1.5px;
-  font-size: 2em;
-}
-
 .turismo_galeria {
   max-width: 1200px;
   width: 100%;
@@ -1192,14 +1184,15 @@ footer .bottom a {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   gap: 20px;
+  margin-bottom: 2.5rem;
 }
 
 .turismo_item {
@@ -1209,13 +1202,17 @@ footer .bottom a {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   text-align: center;
   gap: 20px;
+  overflow: hidden;
+}
+.turismo_item p {
+  color: rgb(85, 85, 85);
 }
 
 .turismo_item .img-box {
@@ -1227,26 +1224,34 @@ footer .bottom a {
   height: 150px;
   width: 100%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
-/* .turismo_item p{
-  max-width: 100%;
-} */
 .turismo_item h3 {
   padding: 0;
   margin: 10px 10px;
   font-size: 1em;
-  /* margin-bottom: 15px; */
   font-family: "Sarabun", sans-serif;
   letter-spacing: 2.2px;
   text-transform: uppercase;
 }
 
-.turismo_item a{
-  transition: .2s;
+.turismo_item a {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
-.turismo_item a:hover{
-  transform: scale(1.1);
+.turismo_item a:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.titulo_turismo {
+  text-align: center;
+  margin: 40px 0;
+  font-family: Forum, sans-serif;
+  letter-spacing: 1.5px;
+  font-size: 2.2em;
+  font-weight: 100;
+  margin: 2.5em 0em;
 }
