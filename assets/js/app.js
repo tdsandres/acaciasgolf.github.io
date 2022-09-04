@@ -109,7 +109,7 @@ let cabanias = [
         {
             id: 1,
             titulo: "Cabaña 3",
-            img: "./assets/img/cabanas/cabana3/cabana3_1.jpg",
+            img: "./assets/img/cabanas/cabana3/0.jpg",
             capacity: 4,
             size: 6,
             description: "2 Plantas 2 Baños", 
@@ -118,7 +118,7 @@ let cabanias = [
         {
             id: 2,
             titulo: "Cabaña 4",
-            img: "./assets/img/cabanas/cabana4/cabana4_1.jpg",
+            img: "./assets/img/cabanas/cabana4/0.jpg",
             capacity: 2,
             size: 2,
             description: "2 ambientes en planta baja", 
@@ -127,7 +127,7 @@ let cabanias = [
         {
             id: 3,
             titulo: "Cabaña 5",
-            img: "./assets/img/cabanas/cabana5/cabana5_1.jpg",
+            img: "./assets/img/cabanas/cabana5/0.jpg",
             capacity: 2,
             size: 6,
             description: "Lorem ipsum dolor sit amet, in nam denique suavitate repudiandae, homero dictas omnesque duo et. Novum dignissim consectetuer ei mel. Ne patrioque consequat persequeris usu, duo inani imperdiet deseruisse in, no tation", 
@@ -136,20 +136,20 @@ let cabanias = [
         {
             id: 4,
             titulo: "Cabaña 7",
-            img: "./assets/img/cabanas/cabana7/cabana7_1.jpg",
-            capacity: 2,
-            size: 6,
-            description: "2 ambientes en planta baja", 
-            carpeta: 'cabana6'
-        },
-        {
-            id: 5,
-            titulo: "Cabaña 8",
-            img: "./assets/img/cabanas/cabana8/cabana8_1.jpg",
+            img: "./assets/img/cabanas/cabana7/0.jpg",
             capacity: 2,
             size: 6,
             description: "2 ambientes en planta baja", 
             carpeta: 'cabana7'
+        },
+        {
+            id: 5,
+            titulo: "Cabaña 8",
+            img: "./assets/img/cabanas/cabana8/0.jpg",
+            capacity: 2,
+            size: 6,
+            description: "2 ambientes en planta baja", 
+            carpeta: 'cabana8'
         },
         
     ]
