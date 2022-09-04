@@ -1577,3 +1577,29 @@ footer .bottom a {
     opacity: 0;
   }
 }
+@media (max-width: 900px) {
+  .box-info-cab {
+    overflow-y: scroll;
+  }
+  .box-info-cab .top {
+    max-width: 400px;
+  }
+  .box-info-cab .gallery {
+    max-width: 500px;
+  }
+}
+@media (max-width: 460px) {
+  .box-info-cab {
+    overflow-y: scroll;
+  }
+  .box-info-cab .top {
+    max-width: 300px;
+  }
+  .box-info-cab .gallery {
+    gap: 5px;
+  }
+  .box-info-cab .gallery a {
+    width: 100px;
+    height: 100px;
+  }
+}
