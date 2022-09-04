@@ -87,7 +87,9 @@
             #hiperv-cab {
                 cursor: pointer;
             }
-
+            &:hover > .img > img {
+                transform: scale(1.1);
+            }
             &:hover > .info h1 {
                 color: $bg1;
             }

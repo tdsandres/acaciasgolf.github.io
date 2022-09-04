@@ -6,7 +6,7 @@ const $btnWsp = $('.whatsapp');
 const $imgMain = document.querySelectorAll('#main-img')
 window.onscroll = () => {
     //wsp
-    console.log(window.scrollY)
+    // console.log(window.scrollY)
     window.scrollY > 550 && window.scrollY < 3000 ? $btnWsp.style.display = 'flex' : $btnWsp.style.display = 'none';   
 
 }
@@ -98,56 +98,71 @@ const $containerCab = $('#contenedor-cabanias')
 
 let cabanias = [
         {
+            id: 0,
             titulo: "Cabaña 1",
-            img: "./assets/img/cabanas/cabana1/cabana1_1.jpg",
+            img: "./assets/img/cabanas/cabana1/0.jpg",
             capacity: 6,
             size: 193,
-            description: "2 habitaciones con cama matrimonial y 2 baños"
+            description: "2 habitaciones con cama matrimonial y 2 baños", 
+            carpeta: 'cabana1'
         }, 
         {
+            id: 1,
             titulo: "Cabaña 3",
             img: "./assets/img/cabanas/cabana3/cabana3_1.jpg",
             capacity: 4,
             size: 6,
-            description: "2 Plantas 2 Baños"
+            description: "2 Plantas 2 Baños", 
+            carpeta: 'cabana3'
         },
         {
+            id: 2,
             titulo: "Cabaña 4",
             img: "./assets/img/cabanas/cabana4/cabana4_1.jpg",
             capacity: 2,
             size: 2,
-            description: "2 ambientes en planta baja"
+            description: "2 ambientes en planta baja", 
+            carpeta: 'cabana4'
         },
         {
+            id: 3,
             titulo: "Cabaña 5",
             img: "./assets/img/cabanas/cabana5/cabana5_1.jpg",
             capacity: 2,
             size: 6,
-            description: "Lorem ipsum dolor sit amet, in nam denique suavitate repudiandae, homero dictas omnesque duo et. Novum dignissim consectetuer ei mel. Ne patrioque consequat persequeris usu, duo inani imperdiet deseruisse in, no tation"
+            description: "Lorem ipsum dolor sit amet, in nam denique suavitate repudiandae, homero dictas omnesque duo et. Novum dignissim consectetuer ei mel. Ne patrioque consequat persequeris usu, duo inani imperdiet deseruisse in, no tation", 
+            carpeta: 'cabana5'
         },
         {
+            id: 4,
             titulo: "Cabaña 7",
             img: "./assets/img/cabanas/cabana7/cabana7_1.jpg",
             capacity: 2,
             size: 6,
-            description: "2 ambientes en planta baja"
+            description: "2 ambientes en planta baja", 
+            carpeta: 'cabana6'
         },
         {
+            id: 5,
             titulo: "Cabaña 8",
             img: "./assets/img/cabanas/cabana8/cabana8_1.jpg",
             capacity: 2,
             size: 6,
-            description: "2 ambientes en planta baja"
+            description: "2 ambientes en planta baja", 
+            carpeta: 'cabana7'
         },
         
     ]
+
+
 
 cabanias.forEach((el) => {
     // console.log(el.titulo)
 
     let div = document.createElement("div")
 
-    div.className = "box"; 
+    div.id = "btn-toggle"
+    div.className = `box ${el.id}`; 
     div.innerHTML = `
     <div class="img" id="hiperv-cab">
         <img src="${el.img}">
@@ -203,3 +218,58 @@ $btnR.addEventListener('click', nextImg)
 $btnL.addEventListener('click', prevImg)
 
 setInterval(nextImg, 8000)
+
+// abrir galeria
+
+let $boxCab = $('.box-info-cab')
+let abierto = false
+let btnsToggle = document.querySelectorAll('#btn-toggle')
+let btnsToggleClose = document.querySelectorAll('#btn-toggle-close')
+let $titulito = $('#titulito')
+let $galeria = $('.gallery')
+
+btnsToggle.forEach((el) => { 
+  el.addEventListener('click', () => {
+    let idCab = el.classList[1]
+    let cab = cabanias[idCab]
+
+    console.log(cab.carpeta)
+    $titulito.innerHTML = cab.titulo
+
+    for(let i = 0; i < 8; i++){
+        let div = document.createElement("a")
+
+        div.className = `item`; 
+        div.innerHTML = `
+        <a class="item" data-lightbox="models" data-title="${cab.titulo}" href="./assets/img/cabanas/${cab.carpeta}/${i}.jpg">
+            <img src="./assets/img/cabanas/${cab.carpeta}/${i}.jpg" alt="${cab.titulo}">
+        </a>`
+
+        $('.gallery').appendChild(div)
+    }
+
+
+    if (!abierto){ 
+      $boxCab.style.animation = "abrir 0.7s"
+      $boxCab.style.display = "flex"
+      abierto = true
+    }
+  })
+})
+
+btnsToggleClose.forEach((el) => { 
+    el.addEventListener('click', () => {
+     
+      while ($galeria.firstChild){
+        $galeria.removeChild($galeria.firstChild)
+      }
+
+      if (abierto){ 
+        $boxCab.style.animation = "cerrar 1s"
+        setTimeout(() => {
+        $boxCab.style.display = "none"
+        abierto = false
+        }, 900)
+      }
+    })
+  })
