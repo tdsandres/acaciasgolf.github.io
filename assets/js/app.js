@@ -130,7 +130,7 @@ let cabanias = [
             img: "./assets/img/cabanas/cabana5/0.jpg",
             capacity: 2,
             size: 6,
-            description: "Lorem ipsum dolor sit amet, in nam denique suavitate repudiandae, homero dictas omnesque duo et. Novum dignissim consectetuer ei mel. Ne patrioque consequat persequeris usu, duo inani imperdiet deseruisse in, no tation", 
+            description: "2 ambientes planta baja", 
             carpeta: 'cabana5'
         },
         {
