@@ -145,7 +145,7 @@ let cabanias = [
         {
             id: 5,
             titulo: "Cabaña 8",
-            img: "./assets/img/cabanas/cabana8/0.jpg",
+            img: "./assets/img/cabanas/cabana8/0.JPG",
             capacity: 2,
             size: 6,
             description: "2 ambientes en planta baja", 
