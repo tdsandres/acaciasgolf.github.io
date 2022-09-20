@@ -102,7 +102,7 @@ let cabanias = [
             titulo: "Cabaña 1",
             img: "./assets/img/cabanas/cabana1/0.jpg",
             capacity: 6,
-            size: 193,
+            size: 110,
             description: "2 habitaciones con cama matrimonial y 2 baños", 
             carpeta: 'cabana1'
         }, 
@@ -111,7 +111,7 @@ let cabanias = [
             titulo: "Cabaña 3",
             img: "./assets/img/cabanas/cabana3/0.jpg",
             capacity: 4,
-            size: 6,
+            size: 70,
             description: "2 Plantas 2 Baños", 
             carpeta: 'cabana3'
         },
@@ -120,7 +120,7 @@ let cabanias = [
             titulo: "Cabaña 4",
             img: "./assets/img/cabanas/cabana4/0.jpg",
             capacity: 2,
-            size: 2,
+            size: 60,
             description: "2 ambientes en planta baja", 
             carpeta: 'cabana4'
         },
@@ -129,7 +129,7 @@ let cabanias = [
             titulo: "Cabaña 5",
             img: "./assets/img/cabanas/cabana5/0.jpg",
             capacity: 2,
-            size: 6,
+            size: 35,
             description: "2 ambientes planta baja", 
             carpeta: 'cabana5'
         },
@@ -138,16 +138,16 @@ let cabanias = [
             titulo: "Cabaña 7",
             img: "./assets/img/cabanas/cabana7/0.jpg",
             capacity: 2,
-            size: 6,
+            size: 60,
             description: "2 ambientes en planta baja", 
             carpeta: 'cabana7'
         },
         {
             id: 5,
             titulo: "Cabaña 8",
-            img: "./assets/img/cabanas/cabana8/0.JPG",
+            img: "./assets/img/cabanas/cabana8/0.jpg",
             capacity: 2,
-            size: 6,
+            size: 60,
             description: "2 ambientes en planta baja", 
             carpeta: 'cabana8'
         },
