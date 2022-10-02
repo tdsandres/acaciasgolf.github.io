@@ -172,7 +172,7 @@ cabanias.forEach((el) => {
         <p>Capacidad: <span>${el.capacity} PERSONAS</span> — Tamaño: <span>${el.size}M2</span></p>
         <p class="desc">${el.description}</p>
         <div class="contact">
-            <button>Ver imagenes</button>
+            <button>Contactar</button>
         </div>
     </div>
     `
