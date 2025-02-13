@@ -160,7 +160,7 @@ h3 {
 .nav {
   width: 100%;
   height: 15vh;
-  background: black;
+  background: #0b6354;
   top: 0;
   left: 0;
   right: 0;
@@ -201,7 +201,7 @@ h3 {
   line-height: 32px;
   font-weight: 300;
   text-decoration: none;
-  color: gray;
+  color: rgb(216, 216, 216);
   text-transform: uppercase;
   padding: 10px;
   -webkit-transition: 0.5s;
@@ -526,13 +526,25 @@ h3 {
           flex-direction: column;
   position: relative;
 }
+.wrapper-bg-parallx {
+  width: 100%;
+  height: 100%;
+  background: #0b6354c7;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 5;
+
+}
 #parallax .subtitle {
   color: #d9ca7e;
+  z-index: 1000;
 }
 #parallax h3, #parallax .descrip {
   color: white;
   text-align: center;
   padding: 0 2rem;
+  z-index: 1000;
 }
 
 footer {
@@ -1072,6 +1084,14 @@ footer .bottom a {
           filter: blur(2px);
 }
 
+.nota-blanqueria {
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+
 .nosotros_wrapper {
   max-width: 1200px;
   width: 100%;
@@ -1477,6 +1497,7 @@ footer .bottom a {
   z-index: 10000000;
   background: rgba(255, 255, 255, 0.748);
   display: none;
+  padding: 1rem;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -1488,13 +1509,16 @@ footer .bottom a {
       -ms-flex-direction: column;
           flex-direction: column;
 }
+.wrapper-imgs-box-info-cab {
+  background: white;
+  padding: 0 2rem 2rem 2rem;
+  max-width: 920px;
+}
 .box-info-cab .top {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  max-width: 890px;
   width: 100%;
-  height: 100px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -1519,6 +1543,7 @@ footer .bottom a {
 }
 .box-info-cab .gallery {
   max-width: 900px;
+  max-height: 420px;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1532,7 +1557,9 @@ footer .bottom a {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin: 0 auto;
-  gap: 30px;
+  justify-content: space-between;
+  gap: 10px;
+  overflow-y: auto;
 }
 .box-info-cab .gallery a {
   width: 200px;
@@ -1582,14 +1609,23 @@ footer .bottom a {
   .box-info-cab {
     overflow-y: scroll;
   }
-  .box-info-cab .top {
-    max-width: 400px;
+  .wrapper-imgs-box-info-cab {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
   }
   .box-info-cab .gallery {
-    max-width: 500px;
+    width: 100%;
+    height: 100%;
+    max-height: 90%;
+  }
+  .box-info-cab .gallery a { 
+    width: 100%;
   }
 }
-@media (max-width: 460px) {
+/* @media (max-width: 460px) {
   .box-info-cab {
     overflow-y: scroll;
   }
@@ -1603,4 +1639,4 @@ footer .bottom a {
     width: 100px;
     height: 100px;
   }
-}
+} */

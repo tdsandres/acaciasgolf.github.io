@@ -101,10 +101,11 @@ let cabanias = [
             id: 0,
             titulo: "Cabaña 1",
             img: "./assets/img/cabanas/cabana1/0.jpg",
-            capacity: 6,
-            size: 110,
-            description: "2 habitaciones con cama matrimonial y 2 baños", 
-            carpeta: 'cabana1'
+            capacity: 3,
+            size: 50,
+            description: "1 ambiente y 1 baño", 
+            carpeta: 'cabana1',
+            cant_imgs: 4,
         }, 
         {
             id: 1,
@@ -113,16 +114,18 @@ let cabanias = [
             capacity: 4,
             size: 70,
             description: "2 Plantas 2 Baños", 
-            carpeta: 'cabana3'
+            carpeta: 'cabana3',
+            cant_imgs: 8,
         },
         {
             id: 2,
             titulo: "Cabaña 4",
             img: "./assets/img/cabanas/cabana4/0.jpg",
-            capacity: 2,
+            capacity: 4,
             size: 60,
             description: "2 ambientes en planta baja", 
-            carpeta: 'cabana4'
+            carpeta: 'cabana4',
+            cant_imgs: 8,
         },
         {
             id: 3,
@@ -131,25 +134,28 @@ let cabanias = [
             capacity: 2,
             size: 35,
             description: "2 ambientes planta baja", 
-            carpeta: 'cabana5'
+            carpeta: 'cabana5',
+            cant_imgs: 8,
         },
         {
             id: 4,
             titulo: "Cabaña 7",
             img: "./assets/img/cabanas/cabana7/0.jpg",
-            capacity: 2,
+            capacity: 4,
             size: 60,
             description: "2 ambientes en planta baja", 
-            carpeta: 'cabana7'
+            carpeta: 'cabana7',
+            cant_imgs: 8,
         },
         {
             id: 5,
             titulo: "Cabaña 8",
             img: "./assets/img/cabanas/cabana8/0.jpg",
-            capacity: 2,
+            capacity: 4,
             size: 60,
             description: "2 ambientes en planta baja", 
-            carpeta: 'cabana8'
+            carpeta: 'cabana8',
+            cant_imgs: 8,
         },
         
     ]
@@ -236,7 +242,7 @@ btnsToggle.forEach((el) => {
     console.log(cab.carpeta)
     $titulito.innerHTML = cab.titulo
 
-    for(let i = 0; i < 8; i++){
+    for(let i = 0; i < cab.cant_imgs; i++){
         let div = document.createElement("a")
 
         div.className = `item`; 
